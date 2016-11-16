@@ -1,0 +1,55 @@
+img:hover
+{
+  box-shadow: 20px 20px 20px #dcdcdc;
+ -moz-transform: scale(0.8);
+ -moz-transition-duration: 0.6s;
+ -webkit-transition-duration: 0.6s;
+ -webkit-transform: scale(0.8);
+ 
+ -ms-transform: scale(0.8);
+ -ms-transition-duration: 0.6s;
+ 
+}
+
+
+.img-grid {
+    position: relative;
+    width: [SET TO WHAT YOU NEED];
+    margin: 0 auto; /* this centers the grid, but a fixed pixel width is required */
+}
+
+.img-grid ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.img-grid ul > li {
+    display: block;
+	 box-shadow:0px 0px 20px #cecece;
+
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 28px;
+	
+}
+
+
+/* This moves the next 4 images to the next line (adjust to your needs).
+   If you need cross browser support, consider another option as this is CSS3: */
+.img-grid ul > li:nth-child(4n+4) {
+    clear: right;
+}
+
+/* If you like the images to be fluid (responsible to the parent element): */
+.img-grid li img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    border: 0;
+    
+}
+
+
